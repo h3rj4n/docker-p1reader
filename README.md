@@ -15,7 +15,7 @@ docker built -t herjan/p1reader .
 Running the image as daemon. The example below links the image to a homeassistant where data is send.
 
 ```
-docker run --rm -ti --device /dev/ttyUSB0:/dev/ttyUSB0 \
+docker run -d -ti --device /dev/ttyUSB0:/dev/ttyUSB0 \
 	--privileged --link homeassistant:homeassistant \
 	herjan/p1reader:latest \
 	-c 1 -s homeassistant -o mqtt \
