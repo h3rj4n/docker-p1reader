@@ -9,7 +9,7 @@ Example
 Build this repository.
 
 ```
-docker built -t herjan/p1reader .
+docker build -t herjan/p1reader .
 ```
 
 Running the image as daemon. The example below links the image to a homeassistant where data is send.
